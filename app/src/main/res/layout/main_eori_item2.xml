@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:background="@drawable/select2"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="bottom|left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mbti_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dajungdagam"
+                    android:text="세상의 소금형"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mbti_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dan"
+                    android:gravity="top|left"
+                    android:text="ENFP"
+                    android:textColor="#FFFCFC"
+                    android:textSize="70dp"
+                    android:translationY="-10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="184dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:translationX="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_mbti_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/expo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
