@@ -24,7 +24,7 @@ public class Logo extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Logo.this, MainActivity.class);
+                Intent intent = new Intent(Logo.this, LoginActivity.class);
 
                 startActivity(intent); //인트로 실행 후 바로 MainActivity로 넘어감.
                 overridePendingTransition(0, 0);
